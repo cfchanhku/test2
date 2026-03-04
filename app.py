@@ -14,7 +14,6 @@ STATE_FILE = Path(app.root_path) / "data" / "grid_state.json"
 COLUMN_COUNT = 7
 TOTAL_CELLS = 21
 
-
 def load_marker_index():
     # Return empty state when no saved state exists yet.
     if not STATE_FILE.exists():
