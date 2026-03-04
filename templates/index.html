@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floor Grid</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <!-- Main 3x7 floor grid layout with persistent click marker and timestamp. -->
+    <div class="grid">
+      <div class="cell header">Floor</div>
+      <div class="cell header">1st</div>
+      <div class="cell header">2nd</div>
+      <div class="cell header">3rd</div>
+      <div class="cell header">4th</div>
+      <div class="cell header">5th</div>
+      <div class="cell header">6th</div>
+
+      <div class="cell">A</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+
+      <div class="cell">B</div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <p id="last-clicked-time">Last clicked time: -</p>
+    <script src="{{ url_for('static', filename='js/grid.js') }}"></script>
+  </body>
+</html>
